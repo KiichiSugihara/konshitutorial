@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AD81C7B21D34F7A003F19FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81C7A21D34F7A003F19FC /* AppDelegate.swift */; };
+		4AD81C7D21D34F7A003F19FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81C7C21D34F7A003F19FC /* ViewController.swift */; };
+		4AD81C8021D34F7A003F19FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD81C7E21D34F7A003F19FC /* Main.storyboard */; };
+		4AD81C8221D34F7D003F19FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD81C8121D34F7D003F19FC /* Assets.xcassets */; };
+		4AD81C8521D34F7D003F19FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD81C8321D34F7D003F19FC /* LaunchScreen.storyboard */; };
+		4AD81C9021D34F7D003F19FC /* KonashiGettingStartedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81C8F21D34F7D003F19FC /* KonashiGettingStartedTests.swift */; };
+		4AD81C9B21D34F7E003F19FC /* KonashiGettingStartedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81C9A21D34F7E003F19FC /* KonashiGettingStartedUITests.swift */; };
+		4AD81CAA21D3506B003F19FC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD81CA921D3506B003F19FC /* CoreBluetooth.framework */; };
+		4AD81D1F21D36142003F19FC /* KNSPeripheralBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81CF721D36142003F19FC /* KNSPeripheralBaseImpl.m */; };
+		4AD81D2021D36142003F19FC /* KNSKoshianPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81CF821D36142003F19FC /* KNSKoshianPeripheralImpl.m */; };
+		4AD81D2121D36142003F19FC /* KNSKonashiPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81CF921D36142003F19FC /* KNSKonashiPeripheralImpl.m */; };
+		4AD81D2221D36142003F19FC /* CBUUID+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0121D36142003F19FC /* CBUUID+Konashi.m */; };
+		4AD81D2321D36142003F19FC /* CBService+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0521D36142003F19FC /* CBService+Konashi.m */; };
+		4AD81D2421D36142003F19FC /* CBPeripheral+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0621D36142003F19FC /* CBPeripheral+Konashi.m */; };
+		4AD81D2521D36142003F19FC /* Konashi+Grove.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0921D36142003F19FC /* Konashi+Grove.m */; };
+		4AD81D2621D36142003F19FC /* KNSCentralManager+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0B21D36142003F19FC /* KNSCentralManager+UI.m */; };
+		4AD81D2721D36142003F19FC /* Konashi+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D0F21D36142003F19FC /* Konashi+ADC.m */; };
+		4AD81D2821D36142003F19FC /* Konashi+ACDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1021D36142003F19FC /* Konashi+ACDrive.m */; };
+		4AD81D2921D36142003F19FC /* Konashi+JavaScriptBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1221D36142003F19FC /* Konashi+JavaScriptBindings.m */; };
+		4AD81D2A21D36142003F19FC /* KNSCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1421D36142003F19FC /* KNSCentralManager.m */; };
+		4AD81D2B21D36142003F19FC /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1821D36142003F19FC /* Konashi.m */; };
+		4AD81D2C21D36142003F19FC /* KNSHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1C21D36142003F19FC /* KNSHandlerManager.m */; };
+		4AD81D2D21D36142003F19FC /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1D21D36142003F19FC /* KNSPeripheral.m */; };
+		4AD81D2E21D36142003F19FC /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD81D1E21D36142003F19FC /* KonashiUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AD81C8C21D34F7D003F19FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD81C6F21D34F7A003F19FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD81C7621D34F7A003F19FC;
+			remoteInfo = KonashiGettingStarted;
+		};
+		4AD81C9721D34F7E003F19FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD81C6F21D34F7A003F19FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD81C7621D34F7A003F19FC;
+			remoteInfo = KonashiGettingStarted;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AD81C7721D34F7A003F19FC /* KonashiGettingStarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KonashiGettingStarted.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD81C7A21D34F7A003F19FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AD81C7C21D34F7A003F19FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AD81C7F21D34F7A003F19FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AD81C8121D34F7D003F19FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AD81C8421D34F7D003F19FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AD81C8621D34F7D003F19FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD81C8B21D34F7D003F19FC /* KonashiGettingStartedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonashiGettingStartedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD81C8F21D34F7D003F19FC /* KonashiGettingStartedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonashiGettingStartedTests.swift; sourceTree = "<group>"; };
+		4AD81C9121D34F7D003F19FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD81C9621D34F7D003F19FC /* KonashiGettingStartedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonashiGettingStartedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD81C9A21D34F7E003F19FC /* KonashiGettingStartedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonashiGettingStartedUITests.swift; sourceTree = "<group>"; };
+		4AD81C9C21D34F7E003F19FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD81CA921D3506B003F19FC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4AD81CE721D358C0003F19FC /* KonashiBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KonashiBridgingHeader.h; sourceTree = "<group>"; };
+		4AD81CF621D36142003F19FC /* KNSPeripheralImpls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImpls.h; sourceTree = "<group>"; };
+		4AD81CF721D36142003F19FC /* KNSPeripheralBaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheralBaseImpl.m; sourceTree = "<group>"; };
+		4AD81CF821D36142003F19FC /* KNSKoshianPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKoshianPeripheralImpl.m; sourceTree = "<group>"; };
+		4AD81CF921D36142003F19FC /* KNSKonashiPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKonashiPeripheralImpl.m; sourceTree = "<group>"; };
+		4AD81CFA21D36142003F19FC /* KNSKoshianPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKoshianPeripheralImpl.h; sourceTree = "<group>"; };
+		4AD81CFB21D36142003F19FC /* KNSPeripheralBaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralBaseImpl.h; sourceTree = "<group>"; };
+		4AD81CFC21D36142003F19FC /* KNSPeripheralImplProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImplProtocol.h; sourceTree = "<group>"; };
+		4AD81CFD21D36142003F19FC /* KNSKonashiPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKonashiPeripheralImpl.h; sourceTree = "<group>"; };
+		4AD81CFE21D36142003F19FC /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
+		4AD81D0121D36142003F19FC /* CBUUID+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+Konashi.m"; sourceTree = "<group>"; };
+		4AD81D0221D36142003F19FC /* CBService+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+Konashi.h"; sourceTree = "<group>"; };
+		4AD81D0321D36142003F19FC /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
+		4AD81D0421D36142003F19FC /* CBUUID+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+Konashi.h"; sourceTree = "<group>"; };
+		4AD81D0521D36142003F19FC /* CBService+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+Konashi.m"; sourceTree = "<group>"; };
+		4AD81D0621D36142003F19FC /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
+		4AD81D0821D36142003F19FC /* Konashi+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ADC.h"; sourceTree = "<group>"; };
+		4AD81D0921D36142003F19FC /* Konashi+Grove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+Grove.m"; sourceTree = "<group>"; };
+		4AD81D0A21D36142003F19FC /* KonashiJavaScriptBindingsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiJavaScriptBindingsProtocol.h; sourceTree = "<group>"; };
+		4AD81D0B21D36142003F19FC /* KNSCentralManager+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNSCentralManager+UI.m"; sourceTree = "<group>"; };
+		4AD81D0C21D36142003F19FC /* Konashi+ACDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ACDrive.h"; sourceTree = "<group>"; };
+		4AD81D0D21D36142003F19FC /* Konashi+JavaScriptBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+JavaScriptBindings.h"; sourceTree = "<group>"; };
+		4AD81D0E21D36142003F19FC /* Konashi+Grove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+Grove.h"; sourceTree = "<group>"; };
+		4AD81D0F21D36142003F19FC /* Konashi+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ADC.m"; sourceTree = "<group>"; };
+		4AD81D1021D36142003F19FC /* Konashi+ACDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ACDrive.m"; sourceTree = "<group>"; };
+		4AD81D1121D36142003F19FC /* KNSCentralManager+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNSCentralManager+UI.h"; sourceTree = "<group>"; };
+		4AD81D1221D36142003F19FC /* Konashi+JavaScriptBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+JavaScriptBindings.m"; sourceTree = "<group>"; };
+		4AD81D1321D36142003F19FC /* KNSHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSHandlerManager.h; sourceTree = "<group>"; };
+		4AD81D1421D36142003F19FC /* KNSCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSCentralManager.m; sourceTree = "<group>"; };
+		4AD81D1521D36142003F19FC /* Konashi-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi-Prefix.pch"; sourceTree = "<group>"; };
+		4AD81D1621D36142003F19FC /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
+		4AD81D1721D36142003F19FC /* KNSPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheral.h; sourceTree = "<group>"; };
+		4AD81D1821D36142003F19FC /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
+		4AD81D1A21D36142003F19FC /* KonashiConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiConstant.h; sourceTree = "<group>"; };
+		4AD81D1B21D36142003F19FC /* KNSCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSCentralManager.h; sourceTree = "<group>"; };
+		4AD81D1C21D36142003F19FC /* KNSHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSHandlerManager.m; sourceTree = "<group>"; };
+		4AD81D1D21D36142003F19FC /* KNSPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheral.m; sourceTree = "<group>"; };
+		4AD81D1E21D36142003F19FC /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AD81C7421D34F7A003F19FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD81CAA21D3506B003F19FC /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C8821D34F7D003F19FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C9321D34F7D003F19FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AD81C6E21D34F7A003F19FC = {
+			isa = PBXGroup;
+			children = (
+				4AD81CF421D36142003F19FC /* Konashi */,
+				4AD81CE721D358C0003F19FC /* KonashiBridgingHeader.h */,
+				4AD81C7921D34F7A003F19FC /* KonashiGettingStarted */,
+				4AD81C8E21D34F7D003F19FC /* KonashiGettingStartedTests */,
+				4AD81C9921D34F7E003F19FC /* KonashiGettingStartedUITests */,
+				4AD81C7821D34F7A003F19FC /* Products */,
+				4AD81CA821D3506B003F19FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AD81C7821D34F7A003F19FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81C7721D34F7A003F19FC /* KonashiGettingStarted.app */,
+				4AD81C8B21D34F7D003F19FC /* KonashiGettingStartedTests.xctest */,
+				4AD81C9621D34F7D003F19FC /* KonashiGettingStartedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AD81C7921D34F7A003F19FC /* KonashiGettingStarted */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81C7A21D34F7A003F19FC /* AppDelegate.swift */,
+				4AD81C7C21D34F7A003F19FC /* ViewController.swift */,
+				4AD81C7E21D34F7A003F19FC /* Main.storyboard */,
+				4AD81C8121D34F7D003F19FC /* Assets.xcassets */,
+				4AD81C8321D34F7D003F19FC /* LaunchScreen.storyboard */,
+				4AD81C8621D34F7D003F19FC /* Info.plist */,
+			);
+			path = KonashiGettingStarted;
+			sourceTree = "<group>";
+		};
+		4AD81C8E21D34F7D003F19FC /* KonashiGettingStartedTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81C8F21D34F7D003F19FC /* KonashiGettingStartedTests.swift */,
+				4AD81C9121D34F7D003F19FC /* Info.plist */,
+			);
+			path = KonashiGettingStartedTests;
+			sourceTree = "<group>";
+		};
+		4AD81C9921D34F7E003F19FC /* KonashiGettingStartedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81C9A21D34F7E003F19FC /* KonashiGettingStartedUITests.swift */,
+				4AD81C9C21D34F7E003F19FC /* Info.plist */,
+			);
+			path = KonashiGettingStartedUITests;
+			sourceTree = "<group>";
+		};
+		4AD81CA821D3506B003F19FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81CA921D3506B003F19FC /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AD81CF421D36142003F19FC /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81CF521D36142003F19FC /* Impl */,
+				4AD81CFE21D36142003F19FC /* Konashi.h */,
+				4AD81CFF21D36142003F19FC /* Category */,
+				4AD81D1321D36142003F19FC /* KNSHandlerManager.h */,
+				4AD81D1421D36142003F19FC /* KNSCentralManager.m */,
+				4AD81D1521D36142003F19FC /* Konashi-Prefix.pch */,
+				4AD81D1621D36142003F19FC /* KonashiUtils.h */,
+				4AD81D1721D36142003F19FC /* KNSPeripheral.h */,
+				4AD81D1821D36142003F19FC /* Konashi.m */,
+				4AD81D1921D36142003F19FC /* Constant */,
+				4AD81D1B21D36142003F19FC /* KNSCentralManager.h */,
+				4AD81D1C21D36142003F19FC /* KNSHandlerManager.m */,
+				4AD81D1D21D36142003F19FC /* KNSPeripheral.m */,
+				4AD81D1E21D36142003F19FC /* KonashiUtils.m */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		4AD81CF521D36142003F19FC /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81CF621D36142003F19FC /* KNSPeripheralImpls.h */,
+				4AD81CF721D36142003F19FC /* KNSPeripheralBaseImpl.m */,
+				4AD81CF821D36142003F19FC /* KNSKoshianPeripheralImpl.m */,
+				4AD81CF921D36142003F19FC /* KNSKonashiPeripheralImpl.m */,
+				4AD81CFA21D36142003F19FC /* KNSKoshianPeripheralImpl.h */,
+				4AD81CFB21D36142003F19FC /* KNSPeripheralBaseImpl.h */,
+				4AD81CFC21D36142003F19FC /* KNSPeripheralImplProtocol.h */,
+				4AD81CFD21D36142003F19FC /* KNSKonashiPeripheralImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		4AD81CFF21D36142003F19FC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81D0021D36142003F19FC /* CoreBluetooth */,
+				4AD81D0721D36142003F19FC /* Konashi */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4AD81D0021D36142003F19FC /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81D0121D36142003F19FC /* CBUUID+Konashi.m */,
+				4AD81D0221D36142003F19FC /* CBService+Konashi.h */,
+				4AD81D0321D36142003F19FC /* CBPeripheral+Konashi.h */,
+				4AD81D0421D36142003F19FC /* CBUUID+Konashi.h */,
+				4AD81D0521D36142003F19FC /* CBService+Konashi.m */,
+				4AD81D0621D36142003F19FC /* CBPeripheral+Konashi.m */,
+			);
+			path = CoreBluetooth;
+			sourceTree = "<group>";
+		};
+		4AD81D0721D36142003F19FC /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81D0821D36142003F19FC /* Konashi+ADC.h */,
+				4AD81D0921D36142003F19FC /* Konashi+Grove.m */,
+				4AD81D0A21D36142003F19FC /* KonashiJavaScriptBindingsProtocol.h */,
+				4AD81D0B21D36142003F19FC /* KNSCentralManager+UI.m */,
+				4AD81D0C21D36142003F19FC /* Konashi+ACDrive.h */,
+				4AD81D0D21D36142003F19FC /* Konashi+JavaScriptBindings.h */,
+				4AD81D0E21D36142003F19FC /* Konashi+Grove.h */,
+				4AD81D0F21D36142003F19FC /* Konashi+ADC.m */,
+				4AD81D1021D36142003F19FC /* Konashi+ACDrive.m */,
+				4AD81D1121D36142003F19FC /* KNSCentralManager+UI.h */,
+				4AD81D1221D36142003F19FC /* Konashi+JavaScriptBindings.m */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		4AD81D1921D36142003F19FC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4AD81D1A21D36142003F19FC /* KonashiConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AD81C7621D34F7A003F19FC /* KonashiGettingStarted */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD81C9F21D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStarted" */;
+			buildPhases = (
+				4AD81C7321D34F7A003F19FC /* Sources */,
+				4AD81C7421D34F7A003F19FC /* Frameworks */,
+				4AD81C7521D34F7A003F19FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KonashiGettingStarted;
+			productName = KonashiGettingStarted;
+			productReference = 4AD81C7721D34F7A003F19FC /* KonashiGettingStarted.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AD81C8A21D34F7D003F19FC /* KonashiGettingStartedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD81CA221D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStartedTests" */;
+			buildPhases = (
+				4AD81C8721D34F7D003F19FC /* Sources */,
+				4AD81C8821D34F7D003F19FC /* Frameworks */,
+				4AD81C8921D34F7D003F19FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD81C8D21D34F7D003F19FC /* PBXTargetDependency */,
+			);
+			name = KonashiGettingStartedTests;
+			productName = KonashiGettingStartedTests;
+			productReference = 4AD81C8B21D34F7D003F19FC /* KonashiGettingStartedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AD81C9521D34F7D003F19FC /* KonashiGettingStartedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD81CA521D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStartedUITests" */;
+			buildPhases = (
+				4AD81C9221D34F7D003F19FC /* Sources */,
+				4AD81C9321D34F7D003F19FC /* Frameworks */,
+				4AD81C9421D34F7D003F19FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD81C9821D34F7E003F19FC /* PBXTargetDependency */,
+			);
+			name = KonashiGettingStartedUITests;
+			productName = KonashiGettingStartedUITests;
+			productReference = 4AD81C9621D34F7D003F19FC /* KonashiGettingStartedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AD81C6F21D34F7A003F19FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kiichi Sugihara";
+				TargetAttributes = {
+					4AD81C7621D34F7A003F19FC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4AD81C8A21D34F7D003F19FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4AD81C7621D34F7A003F19FC;
+					};
+					4AD81C9521D34F7D003F19FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4AD81C7621D34F7A003F19FC;
+					};
+				};
+			};
+			buildConfigurationList = 4AD81C7221D34F7A003F19FC /* Build configuration list for PBXProject "KonashiGettingStarted" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AD81C6E21D34F7A003F19FC;
+			productRefGroup = 4AD81C7821D34F7A003F19FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AD81C7621D34F7A003F19FC /* KonashiGettingStarted */,
+				4AD81C8A21D34F7D003F19FC /* KonashiGettingStartedTests */,
+				4AD81C9521D34F7D003F19FC /* KonashiGettingStartedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AD81C7521D34F7A003F19FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD81C8521D34F7D003F19FC /* LaunchScreen.storyboard in Resources */,
+				4AD81C8221D34F7D003F19FC /* Assets.xcassets in Resources */,
+				4AD81C8021D34F7A003F19FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C8921D34F7D003F19FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C9421D34F7D003F19FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AD81C7321D34F7A003F19FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD81D2621D36142003F19FC /* KNSCentralManager+UI.m in Sources */,
+				4AD81D2921D36142003F19FC /* Konashi+JavaScriptBindings.m in Sources */,
+				4AD81D2D21D36142003F19FC /* KNSPeripheral.m in Sources */,
+				4AD81D2021D36142003F19FC /* KNSKoshianPeripheralImpl.m in Sources */,
+				4AD81D2C21D36142003F19FC /* KNSHandlerManager.m in Sources */,
+				4AD81D2821D36142003F19FC /* Konashi+ACDrive.m in Sources */,
+				4AD81C7D21D34F7A003F19FC /* ViewController.swift in Sources */,
+				4AD81D2E21D36142003F19FC /* KonashiUtils.m in Sources */,
+				4AD81D2421D36142003F19FC /* CBPeripheral+Konashi.m in Sources */,
+				4AD81C7B21D34F7A003F19FC /* AppDelegate.swift in Sources */,
+				4AD81D2121D36142003F19FC /* KNSKonashiPeripheralImpl.m in Sources */,
+				4AD81D2321D36142003F19FC /* CBService+Konashi.m in Sources */,
+				4AD81D2521D36142003F19FC /* Konashi+Grove.m in Sources */,
+				4AD81D2A21D36142003F19FC /* KNSCentralManager.m in Sources */,
+				4AD81D1F21D36142003F19FC /* KNSPeripheralBaseImpl.m in Sources */,
+				4AD81D2721D36142003F19FC /* Konashi+ADC.m in Sources */,
+				4AD81D2221D36142003F19FC /* CBUUID+Konashi.m in Sources */,
+				4AD81D2B21D36142003F19FC /* Konashi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C8721D34F7D003F19FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD81C9021D34F7D003F19FC /* KonashiGettingStartedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD81C9221D34F7D003F19FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD81C9B21D34F7E003F19FC /* KonashiGettingStartedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AD81C8D21D34F7D003F19FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD81C7621D34F7A003F19FC /* KonashiGettingStarted */;
+			targetProxy = 4AD81C8C21D34F7D003F19FC /* PBXContainerItemProxy */;
+		};
+		4AD81C9821D34F7E003F19FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD81C7621D34F7A003F19FC /* KonashiGettingStarted */;
+			targetProxy = 4AD81C9721D34F7E003F19FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AD81C7E21D34F7A003F19FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AD81C7F21D34F7A003F19FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AD81C8321D34F7D003F19FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AD81C8421D34F7D003F19FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AD81C9D21D34F7E003F19FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AD81C9E21D34F7E003F19FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AD81CA021D34F7E003F19FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStarted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStarted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KonashiBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AD81CA121D34F7E003F19FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStarted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStarted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KonashiBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AD81CA321D34F7E003F19FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStartedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStartedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KonashiGettingStarted.app/KonashiGettingStarted";
+			};
+			name = Debug;
+		};
+		4AD81CA421D34F7E003F19FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStartedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStartedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KonashiGettingStarted.app/KonashiGettingStarted";
+			};
+			name = Release;
+		};
+		4AD81CA621D34F7E003F19FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStartedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStartedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KonashiGettingStarted;
+			};
+			name = Debug;
+		};
+		4AD81CA721D34F7E003F19FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SAJY78PFV;
+				INFOPLIST_FILE = KonashiGettingStartedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunekajili.KonashiGettingStartedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KonashiGettingStarted;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AD81C7221D34F7A003F19FC /* Build configuration list for PBXProject "KonashiGettingStarted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD81C9D21D34F7E003F19FC /* Debug */,
+				4AD81C9E21D34F7E003F19FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD81C9F21D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStarted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD81CA021D34F7E003F19FC /* Debug */,
+				4AD81CA121D34F7E003F19FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD81CA221D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStartedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD81CA321D34F7E003F19FC /* Debug */,
+				4AD81CA421D34F7E003F19FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD81CA521D34F7E003F19FC /* Build configuration list for PBXNativeTarget "KonashiGettingStartedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD81CA621D34F7E003F19FC /* Debug */,
+				4AD81CA721D34F7E003F19FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AD81C6F21D34F7A003F19FC /* Project object */;
+}
